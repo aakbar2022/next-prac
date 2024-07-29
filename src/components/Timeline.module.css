@@ -1,0 +1,214 @@
+/* components/Timeline.module.css */
+.timeline {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+    padding-top: 6rem;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/*For center dot*/
+.timeline::before {
+    content: '';
+    position: absolute;
+    border: 9px solid #222222;
+    border-radius: 50%;
+    top: 0;
+    left: 49.45%;
+    margin-left: -1px;
+}
+
+/*For center doted line*/
+.timeline::after {
+    content: '';
+    position: absolute;
+    border: 2px dashed #222222;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timelineItem {
+    position: relative;
+    padding: 0px 0;
+    width: 100%;
+    display: ruby-text;
+}
+
+/* This is for single item box styling*/
+.timelineItem .content {
+    background-color: white;
+    padding: 5px;
+    margin-top: -6rem;
+    /* position: relative; */
+    /* border-radius: 6px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.timelineItem .right {
+    text-align: left;
+}
+
+.timelineItem:nth-child(odd) .content {
+    margin-right: auto;
+    width: 45%;
+}
+
+.timelineItem:nth-child(even) .content {
+    margin-left: auto;
+    width: 45%;
+}
+
+.currentStage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -300%);
+    padding: 10px 15px;
+    background-color: #00c853;
+    color: white;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+
+.about_date_style {
+    font-size: .94rem;
+}
+
+.about_title_style {
+    font-size: 1.05rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.about_desc_style {
+    font-size: .93rem;
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+    /*For center dot*/
+    .timeline::before {
+        left: 49.33%;
+    }
+
+    .currentStage {
+        transform: translate(-50%, -350%);
+    }
+}
+
+@media (max-width: 992px) {
+
+    /*For center dot*/
+    .timeline::before {
+        left: 49%;
+    }
+
+    .currentStage {
+        transform: translate(-50%, -460%);
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .about_date_style {
+        font-size: .87rem;
+    }
+
+    .about_title_style {
+        font-size: .95rem;
+        margin-top: 0.6rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .about_desc_style {
+        font-size: .88rem;
+    }
+
+    /*For center dot*/
+    .timeline::before {
+        left: 13.4%;
+    }
+
+    /*For center doted line*/
+    .timeline::after {
+        top: .4%;
+        left: 14.8%;
+    }
+
+    .timeline {
+        padding-top: 0rem;
+    }
+
+    /* This is for single item box styling*/
+    .timelineItem .content {
+        margin-top: 0rem;
+    }
+
+    .timelineItem {
+        padding: .9rem 0;
+    }
+
+
+    .timelineItem:nth-child(odd) .content {
+        margin-left: auto;
+        margin-right: 0;
+        width: 70%;
+    }
+
+    .timelineItem:nth-child(even) .content {
+        margin-left: auto;
+        margin-right: 0;
+        width: 70%;
+    }
+
+    .currentStage {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        transform: translate(-50%, -525%);
+        padding: 10px 15px;
+        background-color: #00c853;
+        color: white;
+        border-radius: 50px;
+        z-index: 1;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    /*For center dot*/
+    .timeline::before {
+        left: 13.2%;
+    }
+
+    .currentStage {
+        transform: translate(-50%, -590%);
+    }
+
+}
+
+
+@media (max-width: 425px) {
+
+    /*For center dot*/
+    .timeline::before {
+        left: 12.65%;
+    }
+
+    .currentStage {
+        transform: translate(-50%, -590%);
+        font-size: .75rem;
+        padding: 10px 11px;
+    }
+}

@@ -1,0 +1,254 @@
+.progress-bar-vertical {
+    position: relative;
+}
+
+.progress-bar-vertical .step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+    gap: .5rem
+}
+
+.progress-bar-vertical .step .bullet {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #222222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #000;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1.7rem;
+    padding-bottom: 2px;
+}
+
+.progress-bar-vertical .step .active {
+    background: bullet;
+}
+
+.progress-bar-vertical .step .done {
+    border-color: #28a745;
+    background-color: #28a745;
+    color: #fff;
+}
+
+.progress-bar-vertical .step .inActive {
+    background: #222222;
+}
+
+.line {
+    height: 39px;
+    width: 4px;
+    position: absolute;
+    top: 70%;
+    left: 24px;
+    z-index: 0;
+}
+
+.progress-bar-vertical .step:last-child .line {
+    display: none;
+}
+
+.progress-bar-vertical .step .label {
+    /* margin-left: 20px; */
+    font-size: 1rem;
+    color: #000;
+}
+
+.form-page {
+    display: none;
+}
+
+.form-page.active {
+    display: block;
+}
+
+.black {
+    background-color: black;
+}
+
+.border-22 {
+    border-radius: 22px;
+}
+
+.bg-grey {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid black;
+
+}
+
+.bg-greylight {
+    background-color: #fdfafa;
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid black;
+
+}
+
+.bg-red {
+    background-color: red;
+}
+
+
+/* styles.css */
+
+/* Customize scrollbar */
+.custom-scrollbar {
+    height: 200px;
+    /* Set a fixed height for the container */
+    overflow-y: auto;
+    /* Enable vertical scrollbar */
+    scrollbar-width: thin;
+    /* Thin scrollbar */
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Light grey */
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Grey */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Dark grey */
+}
+
+.bg-red {
+    background-color: rebeccapurple;
+}
+
+/* .custom-margin-top {
+    margin-top: 200px;
+} */
+
+.modal_header {
+    padding-left: 2rem;
+}
+
+.step_container {
+    padding-top: 2vw;
+    flex: 0 0 calc(30% - 10px);
+    box-sizing: border-box;
+    height: fit-content;
+    padding-left: 2.1rem;
+}
+
+.step_content_container {
+    flex: 0 0 calc(70% - 10px);
+    box-sizing: border-box;
+}
+
+.customModal {
+    width: 100%;
+}
+
+#multiStepForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.form_container {
+    width: 99%;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.roomTypeCard {
+    border: 1px solid #222222;
+    border-radius: 6px;
+    max-width: 200px;
+    min-width: 200px;
+    width: 100%;
+    padding: 16px 16px;
+}
+
+@media (max-width: 1201px) {
+    .step_container {
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .step_container {
+        max-width: 100%;
+        padding-left: .8rem;
+        flex: 0 0 calc(100%);
+    }
+    .step_content_container {
+        /* max-width: 68%; */
+        flex: 0 0 calc(100% - 5px);
+        box-sizing: border-box;
+    }
+    
+    .step_content_container {
+        max-width: 100%;
+    }
+
+    .progress-bar-vertical {
+        display: flex;
+        overflow: auto;
+        justify-content: center;
+        gap: 1.1rem;
+        padding-top: 10px;
+    }
+
+    .progress-bar-vertical .step {
+        margin-bottom: 5px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .step_cont {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .customModal {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .progress-bar-vertical {
+        gap: .7rem;
+        margin-bottom: 0px;
+        padding-left: 1rem;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .step_cont {
+        display: none;
+    }
+}

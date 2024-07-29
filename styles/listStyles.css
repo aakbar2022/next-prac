@@ -1,0 +1,320 @@
+.card_carousel {
+    width: 40%;
+}
+
+.card_content {
+    width: 60%;
+}
+
+.slick-dots li button:before {
+    color: #FFFFFF !important;
+    font-size: 12px !important;
+}
+
+.slick-dots {
+    bottom: 15px !important;
+}
+
+.slick-slide,
+.slider {
+    outline: none !important;
+    display: unset !important;
+}
+
+.dot {
+    height: 13px;
+    width: 13px;
+    background-color: #22C275;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: -3px;
+}
+
+.card_price {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.room_title {
+    font-size: 1.05rem;
+    font-weight: 400;
+    margin-top: .75rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.elipseL3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.room_desc {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+}
+
+.card_status {
+    display: flex !important;
+    align-items: center !important;
+    gap: .5rem !important;
+    justify-content: center !important;
+    font-size: .9rem;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 18px;
+    padding: 0px 10px;
+    padding-top: 2px;
+}
+
+.property_img {
+    border: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.property_id {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 18px;
+    padding: 7px 12px;
+    padding-bottom: 4px;
+    text-align: center;
+    font-size: .94rem;
+}
+
+
+.detail_header_container {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.detail_body_container {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.about_room {
+    width: 75%;
+}
+
+
+.detail_heading_container {
+    width: 55%;
+}
+
+.small_img_container {
+    width: 49.2%;
+}
+
+.small_img_item {
+    height: 178px !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.apply_container {
+    align-items: center !important;
+    gap: 2.7rem;
+}
+
+.main_all_imgs_container {
+    width: 100%;
+}
+
+.main_img_container {
+    width: 60%;
+    padding-right: 11px;
+    height: 365px !important;
+}
+
+.main_img_item {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.other_imgs_container {
+    width: 40%;
+    height: 365px !important;
+}
+
+.other_imgs_internal_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+.detail_view_price {
+    font-size: 2.3rem;
+}
+
+.detail_view_title {
+    font-size: 1.7rem;
+}
+
+.detail_view_desc {
+    font-size: 1rem;
+}
+
+@media (max-width: 1400px) {
+    .small_img_container {
+        width: 49.1%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .small_img_container {
+        width: 48.8%;
+    }
+
+    .detail_view_price {
+        font-size: 2.2rem;
+    }
+
+    .detail_view_title {
+        font-size: 1.6rem;
+    }
+
+    .detail_view_desc {
+        font-size: .95rem;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .main_img_container {
+        height: 335px !important;
+    }
+
+    .other_imgs_container {
+        height: 335px !important;
+    }
+
+    .small_img_item {
+        height: 163.5px !important;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .small_img_container {
+        width: 48.4%;
+    }
+
+    .detail_heading_container {
+        width: 40%;
+    }
+
+    .detail_view_price {
+        font-size: 1.95rem;
+    }
+
+    .detail_view_title {
+        font-size: 1.45rem;
+    }
+
+    .detail_view_desc {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .detail_view_price {
+        font-size: 1.55rem;
+    }
+
+    .detail_view_title {
+        font-size: 1.26rem;
+    }
+
+    .detail_view_desc {
+        font-size: .9rem;
+    }
+
+    .detail_heading_container {
+        width: 100%;
+    }
+
+    .main_all_imgs_container {
+        flex-wrap: nowrap;
+    }
+
+    .main_img_container {
+        width: 100%;
+        padding-right: 0px;
+        height: 280px !important;
+    }
+
+    .other_imgs_container {
+        width: 100%;
+        height: 90px !important;
+    }
+
+    .other_imgs_internal_container {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 8px
+    }
+
+    .small_img_container {
+        width: 100%;
+        /*This width will not work because in upper css style we have done "flex-wrap: nowrap". This adjusts width automatically*/
+        margin-top: 10px;
+    }
+
+    .small_img_item {
+        height: 90px !important;
+    }
+
+    .apply_container {
+        margin-top: 10px;
+        gap: 1.2rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .about_room {
+        width: 100%;
+        padding-right: 6px;
+    }
+
+    .property_img {
+        border: 0;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .room_title {
+        font-size: .98rem;
+    }
+
+    .card_status {
+        font-size: .84rem;
+    }
+
+    .card_price {
+        font-size: 1.2rem;
+    }
+
+    .card_carousel {
+        width: 100%;
+    }
+
+    .slick-dots li button:before {
+        color: #FFFFFF !important;
+        font-size: 10px !important;
+    }
+
+    .slick-dots {
+        bottom: 10px !important;
+    }
+
+    .card_content {
+        width: 100%;
+    }
+}

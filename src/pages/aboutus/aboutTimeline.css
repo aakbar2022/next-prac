@@ -1,0 +1,74 @@
+.timeline {
+    position: relative;
+    margin: 50px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timelineItem {
+    padding: 10px 40px;
+    position: relative;
+}
+
+.timelineItem::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #000;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timelineItem:nth-child(odd)::after {
+    left: -13px;
+}
+
+.timelineItem:nth-child(even) {
+    text-align: right;
+}
+
+.timelineItem:nth-child(even)::after {
+    right: auto;
+    left: -13px;
+}
+
+.timelineItem .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    z-index: 1;
+}
+
+.timelineItem .left {
+    text-align: left;
+}
+
+.timelineItem .right {
+    text-align: right;
+}
+
+.currentStage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #00c853;
+    color: white;
+    border-radius: 50px;
+    z-index: 1;
+}
